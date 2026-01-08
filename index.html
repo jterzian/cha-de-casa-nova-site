@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chá de Casa Nova</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <h1>Chá de Casa Nova</h1>
+    <p>Vamos celebrar esse novo começo juntos 🏡</p>
+  </header>
+
+  <!-- SOBRE O EVENTO -->
+  <section class="card">
+    <h2>Sobre o evento</h2>
+    <p>
+      Estamos muito felizes com nossa casa nova e queremos comemorar
+      esse momento especial com você.
+    </p>
+    <p><strong>📅 Data:</strong> 00/00/2026</p>
+    <p><strong>📍 Local:</strong> Endereço do evento</p>
+  </section>
+
+  <!-- CONFIRMAÇÃO DE PRESENÇA -->
+  <section class="card">
+    <h2>Confirme sua presença</h2>
+
+    <p class="info">
+      Para controle na portaria, solicitamos o nome completo e RG.
+    </p>
+
+    <form id="rsvpForm">
+      <input
+        type="text"
+        placeholder="Nome completo"
+        required
+      />
+
+      <input
+        type="text"
+        placeholder="RG (Documento)"
+        required
+      />
+
+      <button type="submit">Confirmar presença</button>
+    </form>
+
+    <p id="successMessage" class="hidden">
+      ✨ Presença confirmada! Obrigado 💚
+    </p>
+  </section>
+
+  <!-- LISTA DE PRESENTES -->
+  <section class="card gift">
+    <h2>Lista de presentes</h2>
+    <p>
+      Sua presença já é um presente, mas se quiser contribuir,
+      preparamos uma lista com carinho 💚
+    </p>
+
+    <!-- 🔗 COLOQUE SEU LINK AQUI -->
+    <a
+      href="https://SEU-LINK-DA-LISTA-AQUI"
+      target="_blank"
+      class="gift-button"
+    >
+      🎁 Acessar lista de presentes
+    </a>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>Com carinho 💚</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
