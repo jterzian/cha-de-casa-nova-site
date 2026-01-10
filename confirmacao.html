@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmação de Presença</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Allura&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main class="container">
+    <section class="phone">
+      <h1 class="names">Confirme sua presença</h1>
+      <p class="subtitle">Preencha os dados abaixo para validarmos sua entrada</p>
+
+      <!-- Formulário ajustado -->
+      <form id="formConfirmacao" class="formulario">
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+        <input type="text" id="rg" name="rg" placeholder="Seu RG (ex: 55.333.180-4)" required />
+        <button type="submit" id="btnConfirmar">Confirmar Presença</button>
+      </form>
+
+      <p class="hint" style="margin-top: 20px; cursor: pointer;" onclick="window.location.href='index.html'">
+        ← Voltar ao convite
+      </p>
+    </section>
+  </main>
+
+  <script src="confirmacao.js"></script>
+</body>
+</html>

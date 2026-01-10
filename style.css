@@ -156,3 +156,52 @@ body {
     width: 400px;
   }
 }
+/* ===========================
+   ESTILO FORMULÁRIO CONFIRMAÇÃO
+   =========================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+form label {
+  font-size: 14px;
+  color: var(--verde-escuro);
+  font-weight: 500;
+}
+
+form input {
+  padding: 10px 12px;
+  border: 1.5px solid var(--verde-escuro);
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  color: var(--verde-escuro);
+  background-color: var(--bege-claro);
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: var(--verde-medio);
+  box-shadow: 0 0 5px rgba(85, 98, 67, 0.5);
+}
+
+form button {
+  padding: 12px;
+  background-color: var(--verde-escuro);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--verde-medio);
+  color: var(--bege-claro);
+}
