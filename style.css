@@ -71,20 +71,23 @@ body {
   color: var(--verde-escuro);
 }
 
-/* DIA */
+/* DIA — AGORA PREENCHIDO */
 .day-circle {
-  width: 70px;
-  height: 70px;
-  border: 1.5px solid var(--verde-escuro);
+  width: 56px;
+  height: 56px;
+  background: var(--verde-escuro);   /* 🔥 fundo verde */
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateY(-4px); /* SOBE O NÚMERO */
+
 }
 
+/* NÚMERO BRANCO */
 .day {
-  font-size: 28px;
-  color: var(--verde-escuro);
+  font-size: 22px;
+  color: #ffffff;                    /* 🔥 número branco */
 }
 
 /* HORÁRIO */
@@ -103,29 +106,31 @@ body {
 
 /* ÍCONES */
 .icons {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 /* ITEM */
 .icon-item {
+  width: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
 }
 
-/* CÍRCULO */
+/* CÍRCULOS DOS ÍCONES */
 .icon-circle {
-  width: 70px;
-  height: 70px;
+  width: 56px;
+  height: 56px;
   border: 1.5px solid var(--verde-escuro);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 26px;
+  font-size: 22px;
   color: var(--verde-escuro);
   margin-bottom: 8px;
   transition: all 0.3s ease;
