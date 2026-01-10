@@ -1,85 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Chá de Casa Nova</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite Digital</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
-  <link rel="stylesheet" href="style.css" />
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Allura&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <h1>Chá de Casa Nova</h1>
-    <p>Vamos celebrar esse novo começo juntos 🏡</p>
-  </header>
+  <main class="container">
+    <section class="phone">
 
-  <!-- SOBRE O EVENTO -->
-  <section class="card">
-    <h2>Sobre o evento</h2>
-    <p>
-      Estamos muito felizes com nossa casa nova e queremos comemorar
-      esse momento especial com você.
-    </p>
-    <p><strong>📅 Data:</strong> 00/00/2026</p>
-    <p><strong>📍 Local:</strong> Endereço do evento</p>
-  </section>
+      <!-- NOMES -->
+      <h1 class="names">Giovanna & Wilfred</h1>
 
-  <!-- CONFIRMAÇÃO DE PRESENÇA -->
-  <section class="card">
-    <h2>Confirme sua presença</h2>
+      <!-- TEXTO -->
+      <p class="subtitle">
+        Convidam para celebrar o amor<br>
+        no dia do seu casamento
+      </p>
 
-    <p class="info">
-      Para controle na portaria, solicitamos o nome completo e RG.
-    </p>
+      <!-- DATA -->
+      <div class="date">
+        <span class="month">MAIO</span>
 
-    <form id="rsvpForm">
-      <input
-        type="text"
-        placeholder="Nome completo"
-        required
-      />
+        <div class="day-circle">
+          <span class="day">25</span>
+        </div>
 
-      <input
-        type="text"
-        placeholder="RG (Documento)"
-        required
-      />
+        <span class="year">2026</span>
+      </div>
 
-      <button type="submit">Confirmar presença</button>
-    </form>
+      <!-- HORÁRIO -->
+      <p class="time">às 16h00</p>
 
-    <p id="successMessage" class="hidden">
-      ✨ Presença confirmada! Obrigado 💚
-    </p>
-  </section>
+      <!-- TEXTO ÍCONES -->
+      <p class="hint">clique nos ícones abaixo para mais informações</p>
 
-  <!-- LISTA DE PRESENTES -->
-  <section class="card gift">
-    <h2>Lista de presentes</h2>
-    <p>
-      Sua presença já é um presente, mas se quiser contribuir,
-      preparamos uma lista com carinho 💚
-    </p>
+      <!-- ÍCONES (IGUAL AO LAYOUT) -->
+      <div class="icons">
+        <div class="icon-item" onclick="handleClick('mapa')">
+          <div class="icon-circle">📍</div>
+          <span>Como chegar</span>
+        </div>
 
-    <!-- 🔗 COLOQUE SEU LINK AQUI -->
-    <a
-      href="https://SEU-LINK-DA-LISTA-AQUI"
-      target="_blank"
-      class="gift-button"
-    >
-      🎁 Acessar lista de presentes
-    </a>
-  </section>
+        <div class="icon-item" onclick="handleClick('site')">
+          <div class="icon-circle">💍</div>
+          <span>Site dos noivos</span>
+        </div>
 
-  <!-- RODAPÉ -->
-  <footer>
-    <p>Com carinho 💚</p>
-  </footer>
+        <div class="icon-item" onclick="handleClick('confirmacao')">
+          <div class="icon-circle">✅</div>
+          <span>Confirme sua presença</span>
+        </div>
+
+        <div class="icon-item" onclick="handleClick('manual')">
+          <div class="icon-circle">📖</div>
+          <span>Manual do convidado</span>
+        </div>
+      </div>
+
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
