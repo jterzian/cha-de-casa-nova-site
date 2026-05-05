@@ -1,7 +1,7 @@
 function handleClick(destino) {
   if (destino === 'mapa') {
     // Abre o Google Maps para o Hype Vila Mariana em uma nova aba
-    window.open("https://maps.app.goo.gl/U8J6ryJHYohzq7Fy9", "_blank");
+    window.open("https://maps.app.goo.gl/2vDbYXY4uErw2TyK8", "_blank");;
   } 
   
   else if (destino === 'site') {
